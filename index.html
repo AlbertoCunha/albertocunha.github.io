@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width = device-width">-->
+    <title>Bloquinho</title>
+    <style type="text/css">
+    canvas{
+      border: solid 2px black;
+      height: 500px;
+      width: 1000px;
+
+    }
+    .tela{
+      margin: 200px;
+    }
+    </style>
+  </head>
+  <body onload="inicializar()">
+    <div class="tela">
+    <canvas id="canvas">
+    </canvas>
+
+      <script src="bloquinho.js"></script>
+
+      <form>
+        <label>Velocidade: </label>
+        <input name="num" id="num" type="number" value="5"/>
+        <button type="button" name="button" onclick="Lancar()">Começar</button>
+      </form>
+    </div>
+  </body>
+</html>
